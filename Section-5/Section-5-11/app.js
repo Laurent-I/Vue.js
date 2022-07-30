@@ -1,2 +1,2 @@
-// var foo = 5;
-// document.write(foo);
+let foo = "Laurent";
+document.write(foo);

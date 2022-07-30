@@ -1,6 +1,6 @@
-//{
-//  "extends": "eslint:recommended",
-//  "env": {
-//    "browser": true
-//  }
-//}
+{
+  "extends": "eslint:recommended",
+  "env": {
+    "browser": true
+  }
+}
