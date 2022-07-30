@@ -1,0 +1,12 @@
+/*!**********************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./main.scss ***!
+  \**********************************************************************************************************************************************/
+h1 {
+  color: #d51c1c;
+  -webkit-transform: rotate(-7deg);
+          transform: rotate(-7deg); }
+  h1 span {
+    color: blue; }
+  h1:hover {
+    color: #640d0d; }
+
