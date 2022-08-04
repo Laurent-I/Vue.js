@@ -26,32 +26,32 @@
 <!--    </template>-->
 <!--  </AppForm>-->
 
-<!--  <select v-model="componentName">-->
-<!--    <option value="Home">Home</option>-->
-<!--    <option value="About">About</option>-->
-<!--  </select>-->
+  <select v-model="componentName">
+    <option value="Home">Home</option>
+    <option value="About">About</option>
+  </select>
 
-<!--  <keep-alive>-->
-<!--    <component :is="componentName"></component>-->
-<!--  </keep-alive>-->
+  <keep-alive>
+    <component :is="componentName"></component>
+  </keep-alive>
 
 </template>
 
 <script>
-import AppForm from './components/Form'
-// import Home from "./components/Home";
-// import About from "./components/About";
+// import AppForm from './components/Form'
+import Home from "./components/Home";
+import About from "./components/About";
 export default {
   name: 'App',
   components:{
-    // Home,
-    // About
-    AppForm
+    Home,
+    About
+    // AppForm
   },
   data(){
     return {
-      help: 'This is some help text.'
-      // componentName: 'Home'
+      // help: 'This is some help text.'
+      componentName: 'Home'
     }
   }
 }
