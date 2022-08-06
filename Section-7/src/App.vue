@@ -10,7 +10,7 @@
     <h2 v-if="flag">Hello</h2>
   </transition>
 
-  <!-- <transition
+   <transition
     @before-enter="beforeEnter"
     @enter="enter"
     @after-enter="afterEnter"
@@ -21,7 +21,7 @@
     name="fade"
   >
     <h2 v-if="flag">Hey</h2>
-  </transition> -->
+  </transition>
 
 <!--  <button @click="addItem">Add</button>-->
 
@@ -50,7 +50,7 @@ export default {
       // numbers: [1, 2, 3, 4, 5],
     };
   },
-  // methods: {
+  methods: {
   //   addItem() {
   //     const num = Math.floor(Math.random() * 100 + 1);
   //     const index = Math.floor(Math.random() * this.numbers.length);
@@ -59,41 +59,41 @@ export default {
   //   removeItem(index) {
   //     this.numbers.splice(index, 1);
   //   },
-    // beforeEnter(el) {
-    //   console.log("before-enter event fired", el);
-    // },
-    // enter(el) {
-    //   console.log("enter event fired", el);
+    beforeEnter(el) {
+      console.log("before-enter event fired", el);
+    },
+    enter(el) {
+      console.log("enter event fired", el);
 
-      // const animation = el.animate([{ transform: "scale3d(0,0,0)" }, {}], {
-      //   duration: 1000,
-      // });
+      const animation = el.animate([{ transform: "scale3d(0,0,0)" }, {}], {
+        duration: 1000,
+      });
 
-      // animation.onfinish = () => {
-      //   done();
-      // };
-    // },
-    // afterEnter(el) {
-    //   console.log("after-enter event fired", el);
-    // },
-    // beforeLeave(el) {
-    //   console.log("before-leave event fired", el);
-    // },
-    // leave(el) {
-    //   console.log("leave event fired", el);
+      animation.onfinish = () => {
+        done();
+      };
+    },
+    afterEnter(el) {
+      console.log("after-enter event fired", el);
+    },
+    beforeLeave(el) {
+      console.log("before-leave event fired", el);
+    },
+    leave(el) {
+      console.log("leave event fired", el);
 
-      // const animation = el.animate([{}, { transform: "scale3d(0,0,0)" }], {
-      //   duration: 1000,
-      // });
+      const animation = el.animate([{}, { transform: "scale3d(0,0,0)" }], {
+        duration: 1000,
+      });
 
-      // animation.onfinish = () => {
-      //   done();
-      // };
-    // },
-    // afterLeave(el) {
-    //   console.log("after-leave event fired", el);
-    // },
-  // },
+      animation.onfinish = () => {
+        done();
+      };
+    },
+    afterLeave(el) {
+      console.log("after-leave event fired", el);
+    },
+  },
 };
 </script>
 
