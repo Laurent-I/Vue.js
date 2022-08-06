@@ -6,9 +6,9 @@
     <h2 v-else key="secondary">Another hello!</h2>
   </transition>
 
-  <!-- <transition name="zoom" type="animation" appear>
+ <transition name="zoom" type="animation" appear>
     <h2 v-if="flag">Hello</h2>
-  </transition> -->
+  </transition>
 
   <!-- <transition
     @before-enter="beforeEnter"
@@ -138,37 +138,37 @@ h2 {
   position: absolute;
 }
 
-/*.zoom-enter-active {*/
-/*  animation: zoom-in 1s linear forwards;*/
-/*  transition: all 2s linear;*/
-/*}*/
+.zoom-enter-active {
+  animation: zoom-in 1s linear forwards;
+  transition: all 2s linear;
+}
 
-/*.zoom-leave-active {*/
-/*  animation: zoom-out 1s linear forwards;*/
-/*  transition: all 2s linear;*/
-/*}*/
-/*.zoom-enter-from {*/
-/*  opacity: 0;*/
-/*}*/
-/*.zoom-leave-to {*/
-/*  opacity: 0;*/
-/*}*/
+.zoom-leave-active {
+  animation: zoom-out 1s linear forwards;
+  transition: all 2s linear;
+}
+.zoom-enter-from {
+  opacity: 0;
+}
+.zoom-leave-to {
+  opacity: 0;
+}
 
-/*@keyframes zoom-in {*/
-/*  from {*/
-/*    transform: scale(0, 0);*/
-/*  }*/
-/*  to {*/
-/*    transform: scale(1, 1);*/
-/*  }*/
-/*}*/
+@keyframes zoom-in {
+  from {
+    transform: scale(0, 0);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
 
-/*@keyframes zoom-out {*/
-/*  from {*/
-/*    transform: scale(1, 1);*/
-/*  }*/
-/*  to {*/
-/*    transform: scale(0, 0);*/
-/*  }*/
-/*}*/
+@keyframes zoom-out {
+  from {
+    transform: scale(1, 1);
+  }
+  to {
+    transform: scale(0, 0);
+  }
+}
 </style>
